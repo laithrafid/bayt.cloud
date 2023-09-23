@@ -29,7 +29,7 @@ h1 {
 }
 h2 {
 	font-size: 28px;
-	margin-bottom: 15px;
+	margin-bottom: 15px;	
 }
 h3 {
 	font-size: 22px;
@@ -456,6 +456,26 @@ textarea {
 }
 .price-table .panel-heading{
 padding: 10px 0;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Center the submit button */
+.btn-primary {
+    display: block;
+    margin: 0 auto;
 }
 /* Modals
 ---------------------------------- */
