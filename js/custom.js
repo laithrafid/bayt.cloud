@@ -161,3 +161,53 @@ $('document').ready(function () {
     });
 
 });
+// welcomemessage
+// JavaScript code for the welcome message
+        const welcomeMessage = document.getElementById('welcome-message');
+        const phrases = [
+            'Welcome to bayt.cloud!',
+            'How can we help you?'
+        ];
+        let phraseIndex = 0;
+        let letterIndex = 0;
+        let colorIndex = 0;
+        const colors = ['#ff0000', '#00ff00', '#0000ff']; // Add your desired colors here
+
+        function typeMessage() {
+            const currentPhrase = phrases[phraseIndex];
+            const currentColor = colors[colorIndex];
+
+            if (letterIndex < currentPhrase.length) {
+                const span = document.createElement('span');
+                span.textContent = currentPhrase[letterIndex];
+                span.style.color = currentColor;
+                welcomeMessage.appendChild(span);
+                letterIndex++;
+                setTimeout(typeMessage, 50); // Typing speed (adjust as needed)
+            } else {
+                // Phrase fully typed, move to the next phrase and color
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                letterIndex = 0;
+                colorIndex = (colorIndex + 1) % colors.length;
+                setTimeout(eraseMessage, 2000); // Wait 2 seconds before erasing
+            }
+        }
+
+        function eraseMessage() {
+            if (welcomeMessage.childNodes.length > 0) {
+                welcomeMessage.removeChild(welcomeMessage.childNodes[0]);
+                setTimeout(eraseMessage, 20); // Erasing speed (adjust as needed)
+            } else {
+                setTimeout(typeMessage, 500); // Pause before typing the next phrase
+            }
+        }
+
+        typeMessage(); // Start the typing animation
+
+// recaptcha google
+ grecaptcha.ready(function () {
+                  grecaptcha.execute('6LenMkEoAAAAAHh9JC__6iGnworejZsPwVtFwgbi', {action: 'submit'}).then(function (token) {
+                      console.info("got token: " + token);
+                      document.getElementById('g-recaptcha-response').value = token;
+                  });
+              });

@@ -18,15 +18,6 @@
         <link rel="stylesheet" href="css/styles.css" />
         <!-- Font Awesome-->
         <link href="font/css/font-awesome.min.css" rel="stylesheet"/>
-        <script src="https://www.google.com/recaptcha/api.js?render=6LenMkEoAAAAAHh9JC__6iGnworejZsPwVtFwgbi"></script>
-          <script>
-              grecaptcha.ready(function () {
-                  grecaptcha.execute('6LenMkEoAAAAAHh9JC__6iGnworejZsPwVtFwgbi', {action: 'submit'}).then(function (token) {
-                      console.info("got token: " + token);
-                      document.getElementById('g-recaptcha-response').value = token;
-                  });
-              });
-          </script>
     </head>
 
     <body>
@@ -65,143 +56,51 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
                                       </button>
-            </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#banner">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            </ul>
-            </div>
-            </div>
-            </nav>
-            <!-- navbar end -->
-            </div>
+                                    <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="active"><a href="#home">Home</a></li>
+                                            <li><a href="#services">Services</a></li>
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                    <!-- navbar end -->
+                         </div>
             <!-- main-navigation end -->
-            </div>
+                    </div>
             <!-- header-right end -->
-            </div>
-            </div>
-            </div>
+                </div>
             </header>
             <!-- header end -->
-
-            <!-- banner start -->
-            <div id="banner" class="banner">
-                <div class="banner-image">
-                    <image  src="images/banner.jpg" class="banner-image"> </image>
-                </div>
-                    <div class="banner-caption">
-                         <div class="container">
-                            <div class="row">
-                                <div class="caption-data" style="margin-top: 40px; opacity: 1;" data-animation-effect="fadeIn">
-                                     <!--h1></h1>
-                                    <h3 class="padding-top30"><br/> </h3>
-                                    <div class="padding-top60 contact-form">
-                                        <button class="btn cta-button"></button-->
+            <!-- section start -->
+            <section class="section banner pclear secPadding">
+                <div class="container" data-animation-effect="fadeIn">
+                    <h1 id="home" class="title text-center"></h1>
+                                    <h2 id="welcome-message"></h2>
+            </section>
+            <!-- section end -->
+            <!-- section start -->
+            <section class="section banner pclear secPadding ">
+                <div class="container" data-animation-effect="fadeIn">
+                    <h1 id="services" class="title text-center"></h1>
+                            <div class="middle">
+                                       <div class="hex"><i class="fa fa-cloud fa-3x"></i>Infrastructure Modernization</div>
+                                       <div class="hex"><i class="fa fa-gear fa-3x"></i>Applications Modernization</div>
+                                       <br>
+                                       <div class="hex"><i class="fa fa-magic fa-3x"></i>Innovation Management</div>
+                                       <div class="spacer">Bayt.cloud services</div>
+                                       <div class="hex"><i class="fa fa-clock-o fa-3x"></i>Outsourcing Management</div>
+                                       <br>
+                                       <div class="hex"><i class="fa fa-legal fa-3x"></i>Due Diligence Analysis</div>
+                                       <div class="hex"><i class="fa fa-globe fa-3x"></i>Change Management</div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div>
-            <!-- banner end -->
-
-            <section class="hero-caption secPadding">
-                <div class="container">
-                <div class="row " style="margin-top: 0px;">
-                <img  src="images/banner2.jpg" class="banner-image2"> </img>
-                </div>
-                </div>
-           </section>
-        <!-- section start -->
-            <section class="section transprant-bg pclear secPadding">
-                <div class="container no-view" data-animation-effect="fadeIn">
-                    <h1 id="services" class="title text-center">Services</h1>
-                    <div class="space"></div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="media block-list">
-                                    <div class="media-left">
-
-                                        <i class="hexagon" style="color: #d357fe;"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">Infrastructure Modernization</h3>
-                                        <blockquote>
-                                            <p>Unlock the power of cloud technologies, automate infrastructure with code, and choose the right cloud model for your needs.</p>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="media block-list">
-                                    <div class="media-left">
-                                        <i class="hexagon" style="color: #fffb00;"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">Applications Modernization</h3>
-                                        <blockquote>
-                                            <p>Transform legacy monolithic code, address database challenges, adopt microservices architecture, and streamline third-party integrations.</p>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="media block-list">
-                                    <div class="media-left">
-                                        <i class="hexagon" style="color: #ff2600;"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">Innovation Management</h3>
-                                        <blockquote>
-                                            <p>Drive innovation with fresh ideas, creative input, and new revenue streams to stay ahead in your industry.</p>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="media block-list">
-                                    <div class="media-left">
-                                        <i class="hexagon" style="color: #00f900;"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">Outsourcing Management</h3>
-                                        <blockquote>
-                                            <p>Efficiently manage freelancers and outsource teams for building new features, products, or entire companies.</p>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="media block-list">
-                                    <div class="media-left">
-                                        <i class="hexagon" style="color: #0433ff;"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">Due Diligence Analysis</h3>
-                                        <blockquote>
-                                            <p> Gain confidence in your investments with thorough technical due diligence reports before investing in startups. </p>
-
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="media block-list">
-                                    <div class="media-left">
-                                        <i class="hexagon" style="color: #ff9300;"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="media-heading">Change Management</h3>
-                                        <blockquote>
-                                            <p>Embrace change, move to hybrid or all-remote work, and create a culture of continuous improvement and remote collaboration. </p>
-                                        </blockquote>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,17 +108,17 @@
                 </section>
                 <!-- section end -->
                 <!-- section start -->
-                <section class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
-                    <div class="container">
+                <section class="section banner pclear secPadding">
+                    <div class="container no-view" data-animation-effect="fadeIn">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 id="about" class="title text-center">About<span> Us </span></h1>
+                                <h1 id="about" class="title text-center middle ">About<span> Us </span></h1>
                                 <p class="lead text-center">Bayt.cloud is a consulting Studio, founded in 2018 by <a class="lead text-center" href="https://rafids.com">Laith</a> </p>
                             </div>
                         </div>
                     </div>
-                    </section>
-                    <!--section ends-->
+                </section>
+                <!--section ends-->
                 <!-- footer start -->
                 <footer id="footer">
                     <!-- .footer start -->
@@ -266,9 +165,9 @@
                                             </p><br/>
                                         </div>
                                             <ul class="social-links">
-                                                <li class="hexagon" ><a target="_blank" href="https://www.facebook.com/baytcloud/"><i class="fa fa-facebook"></i></a></li>
-                                                <li class="hexagon"><a target="_blank" href="https://www.linkedin.com/company/baytcloud"><i class="fa fa-linkedin"></i></a></li>
-                                                <li class="hexagon"><a target="_blank" href="https://github.com/Bayt-cloud"><i class="fa fa-github"></i></a></li>
+                                                <li class="fa-facebook" ><a target="_blank" href="https://www.facebook.com/baytcloud/"><i class="fa fa-facebook"></i></a></li>
+                                                <li class="fa-linkedin"><a target="_blank" href="https://www.linkedin.com/company/baytcloud"><i class="fa fa-linkedin"></i></a></li>
+                                                <li class="fa-github"><a target="_blank" href="https://github.com/Bayt-cloud"><i class="fa fa-github"></i></a></li>
                                             </ul>
                                     </div>
                                  </div>
@@ -301,3 +200,4 @@
     <script src="flexslider/jquery.flexslider.js"></script>
     <script src="js/custom.js" type="text/javascript"></script> 
     <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LenMkEoAAAAAHh9JC__6iGnworejZsPwVtFwgbi"></script>
