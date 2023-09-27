@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #333333;
+	color: #ffffff;
 }
 h1 {
 	font-size: 38px;
@@ -56,7 +56,7 @@ h4 span {
 	color: #0026ffd2;
 }
 a {
-	color: #0026ffd2;
+	color: #ffffffd2;
 }
 a:hover {
 	color: #0026ffd2;
@@ -442,7 +442,7 @@ text-align:center;
 	border-radius: 0px;
 }
 .form-control-feedback {
-	color: #cccccc;
+	color: #ffffff;
 }
 .has-feedback label.sr-only ~ .form-control-feedback {
 	top: 15px;
