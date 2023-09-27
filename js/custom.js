@@ -166,7 +166,7 @@ $('document').ready(function () {
         const welcomeMessage = document.getElementById('welcome-message');
         const phrases = [
             'Welcome to bayt.cloud!',
-            'How can we help you?'
+            'Yes, We can Help'
         ];
         let phraseIndex = 0;
         let letterIndex = 0;
