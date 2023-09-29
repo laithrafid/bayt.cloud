@@ -209,3 +209,8 @@ $('document').ready(function () {
                       document.getElementById('g-recaptcha-response').value = token;
                   });
               });
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
