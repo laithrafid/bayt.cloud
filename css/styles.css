@@ -914,10 +914,6 @@ body {
   -webkit-animation: pulse 7.5s infinite;
   animation: pulse 7.5s infinite;
 }
-
-
-
-
 .hex::before, .hex::after {
   content: "";
   display: block;
@@ -945,8 +941,6 @@ body {
   top: 87.75724px; /* 43.87862px * 2 to double the height */
 }
 
-
-
 .spacer {
   display: inline-block;
   align-items: center;
@@ -961,11 +955,7 @@ body {
   color: #FFFFFF; /* Text color for the spacer */
   animation: pulse 7.5s infinite;
 }
-
-
 /* Define unique dark colors for each hex */
-
-
 .hex:nth-of-type(1) {
   background-color: #800080; /* Dark purple */
 }
@@ -1015,7 +1005,7 @@ body {
   background-color: #90EE90; /* Light green */  
 }
 
-//* Styles for the zoomed-in hexagon */
+/* Styles for the zoomed-in hexagon */
 .hex.zoomed {
     transform: scale(1.5); /* Increase the scale for zoom effect */
     z-index: 9999; /* Ensure the zoomed hexagon appears on top */
@@ -1081,9 +1071,60 @@ body {
 .hex:nth-child(7) {
     background-color: #008000; /* Dark green */
 }
-
-
-
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+	body {
+	  margin: 10px;
+	}
+  
+	.hex {
+	  width: 100px; /* Adjust the width for smaller screens */
+	  height: 57.75724px; /* Adjust the height for smaller screens */
+	  margin: 28.87862px 2px 3.4641px; /* Adjust the margins for smaller screens */
+	  font-size: 12px; /* Adjust the font size for smaller screens */
+	}
+  
+	.spacer {
+	  width: 120px; /* Adjust the width for smaller screens */
+	  font-size: 16px; /* Adjust the font size for smaller screens */
+	}
+  
+	.hex i.fa {
+	  font-size: 14px; /* Adjust the icon size for smaller screens */
+	}
+  
+	.hex p.fa {
+	  font-size: 12px; /* Adjust the font size for smaller screens */
+	}
+  
+	/* Hide the ::before and ::after pseudo-elements for smaller screens */
+	.hex::before, .hex::after {
+	  display: none;
+	}
+  }
+  /* Media query for screens smaller than 576px (e.g., mobile screens) */
+@media (max-width: 576px) {
+	.hex {
+	  width: 80px; /* Adjust the width for smaller screens */
+	  height: 46.37724px; /* Adjust the height for smaller screens */
+	  margin: 23.18862px 2px 1.73205px; /* Adjust the margins for smaller screens */
+	  font-size: 10px; /* Adjust the font size for smaller screens */
+	}
+  
+	.spacer {
+	  width: 100px; /* Adjust the width for smaller screens */
+	  font-size: 14px; /* Adjust the font size for smaller screens */
+	}
+  
+	.hex i.fa {
+	  font-size: 12px; /* Adjust the icon size for smaller screens */
+	}
+  
+	.hex p.fa {
+	  font-size: 10px; /* Adjust the font size for smaller screens */
+	}
+  }
+  
 /* welome message
 ----------------------------------------------------------------------------- */
 #welcome-message {
