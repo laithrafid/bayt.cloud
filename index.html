@@ -85,23 +85,55 @@
                 <div class="container" data-animation-effect="fadeIn">
                     <h1 id="services" class="title text-center"></h1>
                             <div class="middle">
-                                       <div class="hex"><i class="fa fa-cloud fa-3x"></i>Infrastructure Modernization</div>
-                                       <div class="hex"><i class="fa fa-gear fa-3x"></i>Applications Modernization</div>
-                                       <br>
-                                       <div class="hex"><i class="fa fa-magic fa-3x"></i>Innovation Management</div>
-                                       <div class="spacer">Bayt.cloud services</div>
-                                       <div class="hex"><i class="fa fa-clock-o fa-3x"></i>Outsourcing Management</div>
-                                       <br>
-                                       <div class="hex"><i class="fa fa-legal fa-3x"></i>Due Diligence Analysis</div>
-                                       <div class="hex"><i class="fa fa-globe fa-3x"></i>Change Management</div>
-                                    </div>
+                                <div class="hex-container">
+                                <div class="hex" data-description="Infrastructure Modernization">
+                                    <i class="fa fa-cloud fa-3x"></i>
+                                    <p>Infrastructure Modernization</p>
+                                </div>
+                                <div class="hex" data-description="Applications Modernization">
+                                    <i class="fa fa-gear fa-3x"></i>
+                                    <p>Applications Modernization</p>
+                                </div>
+                                <br>
+                                <div class="hex" data-description="Innovation Management">
+                                    <i class="fa fa-magic fa-3x"></i>
+                                    <p >Innovation Management</p>
+                                </div>
+                                <div class="spacer">Bayt.cloud services</div>
+                                <div class="hex" data-description="Outsourcing Management">
+                                    <i class="fa fa-clock-o fa-3x"></i>
+                                    <p>Outsourcing Management</p>
+                                </div>
+                                <br>
+                                <div class="hex" data-description="Due Diligence Analysis">
+                                    <i class="fa fa-legal fa-3x"></i>
+                                    <p>Due Diligence Analysis</p>
+                                </div>
+                                <div class="hex" data-description="Change Management">
+                                    <i class="fa fa-globe fa-3x"></i>
+                                    <p>Change Management</p>
                                 </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                </div>
                 </section>
                 <!-- section end -->
+                <!-- Service description pane -->
+                <div class="service-pane" data-description="Infrastructure Modernization">
+                    <div class="service-content">
+                        <div class="close-btn" onclick="closeServiceDescriptionPane()">X</div>
+                        <h2>Infrastructure Modernization</h2>
+                        <p>Infrastructure Modernization description.</p>
+                    </div>
+                </div>
+                <div class="service-pane" data-description="Applications Modernization">
+                    <div class="service-content">
+                        <div class="close-btn" onclick="closeServiceDescriptionPane()">X</div>
+                        <h2>Applications Modernization</h2>
+                        <p>Applications Modernization description.</p>
+                    </div>
+                </div>
+
                 <!-- section start -->
                 <section class="section banner pclear secPadding">
                     <div class="container no-view" data-animation-effect="fadeIn">
@@ -195,4 +227,5 @@
     <script src="js/custom.js" type="text/javascript"></script> 
     <script src="js/owl-carousel/owl.carousel.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LenMkEoAAAAAHh9JC__6iGnworejZsPwVtFwgbi"></script>
-    </body>
+    <script src="js/hex.js"></script>    
+</body>

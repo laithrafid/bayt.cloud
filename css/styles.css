@@ -934,7 +934,9 @@ body {
   display: block; /* Display the icon as a block element */
   margin-bottom: 10px; /* Add margin below the icon */
 }
-
+.hex p.fa {
+	font-size: bold 15px;
+}
 .hex::before {
   top: 0;
 }
@@ -1012,6 +1014,75 @@ body {
 .hex:nth-of-type(7):hover {
   background-color: #90EE90; /* Light green */  
 }
+
+//* Styles for the zoomed-in hexagon */
+.hex.zoomed {
+    transform: scale(1.5); /* Increase the scale for zoom effect */
+    z-index: 9999; /* Ensure the zoomed hexagon appears on top */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+/* Styles for the service description pane */
+.service-pane {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-content {
+    background-color: inherit;
+    padding: 20px;
+    border-radius: 10px; /* Adjust the border-radius for a rounded pane */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Styles for the hexagon shape in the service pane */
+.service-content:before {
+    content: '';
+    position: absolute;
+    top: -15px; /* Adjust the positioning as needed */
+    left: calc(50% - 15px); /* Adjust the positioning as needed */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid inherit; /* Inherit the color from service content background */
+}
+
+/* Add nth-child styles for different colors based on hexagon position */
+.hex:nth-child(1) {
+    background-color: #800080; /* Dark purple */
+}
+
+.hex:nth-child(2) {
+    background-color: #FFFF00; /* Dark yellow */
+}
+
+.hex:nth-child(3) {
+    background-color:  #FF0000; /* Dark red */
+}
+
+.hex:nth-child(5) {
+    background-color:  #0000FF; /* Dark blue */
+}
+
+.hex:nth-child(6) {
+    background-color: #FFA500; /* Dark orange */
+}
+
+.hex:nth-child(7) {
+    background-color: #008000; /* Dark green */
+}
+
+
 
 /* welome message
 ----------------------------------------------------------------------------- */
