@@ -998,7 +998,7 @@ body {
 }
 
 .hex:nth-of-type(6):hover {
-  background-color: #FFD700; /* Light orange */
+  background-color: #0b00ff; /* Light blue */
 }
 
 .hex:nth-of-type(7):hover {
