@@ -969,9 +969,6 @@ body {
   background-color: #FF0000; /* Dark red */
 }
 
-.hex:nth-of-type(4) {
-  background-color: #8B4513; /* Dark brown */
-}
 
 .hex:nth-of-type(5) {
   background-color: #0000FF; /* Dark blue */
@@ -998,16 +995,13 @@ body {
   background-color: #FFC0CB; /* Light pink */
 }
 
-.hex:nth-of-type(4):hover {
-  background-color: #D2B48C; /* Tan */
-}
 
 .hex:nth-of-type(5):hover {
-  background-color: #FFD700; /* Light orange */
+  background-color: #ADD8E6; /* Light blue */ 
 }
 
 .hex:nth-of-type(6):hover {
-  background-color: #ADD8E6; /* Light blue */
+  background-color: #FFD700; /* Light orange */
 }
 
 .hex:nth-of-type(7):hover {
