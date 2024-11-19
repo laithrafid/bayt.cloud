@@ -961,26 +961,26 @@ body {
 }
 
 .hex:nth-of-type(2) {
-  background-color: #FFFF00; /* Dark yellow */
+  background-color: #FFFF00; /* Bright yellow */
 }
 
 .hex:nth-of-type(3) {
-  background-color:  #FF0000; /* Dark red */ 
+  background-color: #FF0000; /* Dark red */
 }
 
+
 .hex:nth-of-type(5) {
-  background-color:  #0000FF; /* Dark blue */
+  background-color: #0000FF; /* Dark blue */
 }
 
 .hex:nth-of-type(6) {
-  background-color: #FFA500; /* Dark orange */
+  background-color: #FFA500; /* Orange */
 }
 
 .hex:nth-of-type(7) {
-  background-color: #008000; /* Dark green */  
+  background-color: #008000; /* Dark green */
 }
 
-/* Define unique dark colors for each hex */
 .hex:nth-of-type(1):hover {
   background-color: #E6E6FA; /* Light purple */
 }
@@ -990,20 +990,22 @@ body {
 }
 
 .hex:nth-of-type(3):hover {
-  background-color:  #FFC0CB; /* Light red */ 
+  background-color: #FFC0CB; /* Light pink */
 }
 
+
 .hex:nth-of-type(5):hover {
-  background-color:  #ADD8E6; /* Light blue */
+  background-color: #FFD700; /* Light orange */
 }
 
 .hex:nth-of-type(6):hover {
-  background-color: #0b00ff; /* Light blue */
+  background-color: #ADD8E6; /* Light blue */
 }
 
 .hex:nth-of-type(7):hover {
-  background-color: #90EE90; /* Light green */  
+  background-color: #90EE90; /* Light green */
 }
+
 
 /* Styles for the zoomed-in hexagon */
 .hex.zoomed {
