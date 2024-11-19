@@ -955,7 +955,8 @@ body {
   color: #FFFFFF; /* Text color for the spacer */
   animation: pulse 7.5s infinite;
 }
-/* Define unique dark colors for each hex */
+/* Add nth-child styles for different colors based on hexagon position */
+/* Regular Styles */
 .hex:nth-of-type(1) {
   background-color: #800080; /* Dark purple */
 }
@@ -968,6 +969,9 @@ body {
   background-color: #FF0000; /* Dark red */
 }
 
+.hex:nth-of-type(4) {
+  background-color: #8B4513; /* Dark brown */
+}
 
 .hex:nth-of-type(5) {
   background-color: #0000FF; /* Dark blue */
@@ -981,6 +985,7 @@ body {
   background-color: #008000; /* Dark green */
 }
 
+/* Hover Styles */
 .hex:nth-of-type(1):hover {
   background-color: #E6E6FA; /* Light purple */
 }
@@ -993,6 +998,9 @@ body {
   background-color: #FFC0CB; /* Light pink */
 }
 
+.hex:nth-of-type(4):hover {
+  background-color: #D2B48C; /* Tan */
+}
 
 .hex:nth-of-type(5):hover {
   background-color: #FFD700; /* Light orange */
@@ -1049,30 +1057,7 @@ body {
     border-bottom: 15px solid inherit; /* Inherit the color from service content background */
 }
 
-/* Add nth-child styles for different colors based on hexagon position */
-.hex:nth-child(1) {
-    background-color: #800080; /* Dark purple */
-}
 
-.hex:nth-child(2) {
-    background-color: #FFFF00; /* Dark yellow */
-}
-
-.hex:nth-child(3) {
-    background-color:  #FF0000; /* Dark red */
-}
-
-.hex:nth-child(5) {
-    background-color:  #0000FF; /* Dark blue */
-}
-
-.hex:nth-child(6) {
-    background-color: #FFA500; /* Dark orange */
-}
-
-.hex:nth-child(7) {
-    background-color: #008000; /* Dark green */
-}
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
 	body {
